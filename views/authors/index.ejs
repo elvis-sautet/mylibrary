@@ -1,0 +1,61 @@
+<div>
+  <div
+    class="
+      flex flex-col
+      max-w-md
+      p-3
+      bg-white
+      mx-auto
+      shadow-sm
+      mt-2
+      rounded-sm
+    "
+  >
+    <form action="/authors" method="GET">
+      <div
+        class="
+          flex
+          h-12
+          bg-yellow-400
+          border-2 border-yellow-500
+          rounded-lg
+          overflow-hidden
+        "
+      >
+        <input
+          class="
+            flex flex-grow flex-shrink
+            h-full
+            border-0
+            focus:outline-none
+            placeholder-purple-300
+            text-black
+            px-3
+            tracking-wide
+          "
+          type="text"
+          name="name"
+          id="name"
+          autocomplete="off"
+          placeholder="Search Author..."
+          value="<%= searchOptions.name %>"
+        />
+        <button
+          type="submit"
+          class="h-full bg-transparent px-3 text-sm font-semibold"
+        >
+          Search
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <br />
+  <div>
+    <% authors.forEach(author => { %>
+    <div>
+      <h2><%= author.name %></h2>
+    </div>
+    <% }); %>
+  </div>
+</div>

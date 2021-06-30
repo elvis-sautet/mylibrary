@@ -5,16 +5,20 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build-css": "tailwindcss build  public/styles/styles.css -o public/styles/main.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "body-parser": "^1.19.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.1",
-    "mongoose": "^5.13.0"
+    "mongoose": "^5.13.0",
+    "tailwindcss": "^2.2.4"
   },
   "devDependencies": {
     "dotenv": "^10.0.0"

@@ -1,0 +1,42 @@
+<div class="max-w-md w-full shadow-md mx-auto mt-8 p-3 border border-gray-200">
+  <h2 class="text-center tracking-wide font-semibold text-gray-700">
+    New Author
+  </h2>
+
+  <form action="/authors" method="POST">
+    <%- include('_form_fields') %>
+    <div class="flex space-x-5 justify-center">
+      <a
+        href="/authors"
+        class="
+          bg-gray-600
+          text-white text-center
+          w-24
+          font-Poppins
+          tracking-wide
+          px-3
+          py-2
+          focus:ring-2 focus:ring-offset-2 focus:ring-gray-700
+          rounded-sm
+        "
+        >Cancel</a
+      >
+      <button
+        class="
+          bg-indigo-600
+          text-white text-center
+          rounded-sm
+          w-24
+          px-3
+          py-2
+          font-Poppins
+          tracking-wide
+          focus:ring-2 focus:ring-offset-2 focus:ring-gray-700
+        "
+        type="submit"
+      >
+        Create
+      </button>
+    </div>
+  </form>
+</div>
